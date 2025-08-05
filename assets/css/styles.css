@@ -249,6 +249,25 @@ img {
   width: 200px;
   border-radius: 0.5rem;
 }
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3b82f6; /* blue */
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.button-group {
+  display: flex;
+  gap: 15px; /* Space between the buttons */
+  margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #2563eb;
+}
+
 
 /* ===== SKILLS =====*/
 .skills__container {
@@ -323,23 +342,51 @@ img {
 }
 
 /* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
 }
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
+.form-inputs{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.input-field{
+    width: 50%;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+    padding-inline: 20px;
+    outline: none;
+}
+textarea{
+    width: 100%;
+    height: 250px;
+    background: transparent;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+    padding: 15px 20px;
+    outline: none;
+    resize: none;
+}
+.form-button > .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-button>.btn:hover{
+    background: #4d3bd7;
+}
+.form-button i{
+    font-size: 18px;
+    rotate: -45deg;
 }
 
 /* ===== FOOTER =====*/
